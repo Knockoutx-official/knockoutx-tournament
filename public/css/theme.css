@@ -1,0 +1,55 @@
+/* Light Theme (Default) */
+:root {
+    --bg-primary: #F5F5F5;
+    --bg-secondary: #FFFFFF;
+    --text-primary: #000000;
+    --text-secondary: #666666;
+    --border-color: #DDDDDD;
+    --hover-bg: #F0F0F0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+}
+
+/* Dark Theme */
+body.dark-mode {
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #1A1A1A;
+    --text-primary: #FFFFFF;
+    --text-secondary: #CCCCCC;
+    --border-color: #333333;
+    --hover-bg: #2A2A2A;
+}
+
+/* Apply theme to elements */
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card, nav, footer {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+input, textarea, select {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--text-secondary);
+}
+
+a {
+    color: var(--text-primary);
+}
+
+a:hover {
+    color: #FF0000;
+}
